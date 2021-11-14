@@ -1,0 +1,988 @@
+[
+  {
+    "id": "pZNaZLME",
+    "city": "Sao Paulo",
+    "class": 2,
+    "country": "Brazil",
+    "status": "open",
+    "name": "Sao Paulo Masters Derby",
+    "fee": "0.0011",
+    "length": 1400,
+    "prize": {
+      "first": "7128000000000000",
+      "second": "2970000000000000",
+      "third": "1782000000000000",
+      "total": "11880000000000000"
+    },
+    "start_time": "to be defined",
+    "gates": {},
+    "openGates": "",
+    "totalWinPercentage": "",
+    "winPercentageByDistance": "",
+    "totalOddsPercentage": "",
+    "oddsByDistance": "",
+    "horses": []
+  },
+  {
+    "id": "pnjZx5",
+    "city": "Kharkiv",
+    "class": 1,
+    "country": "Ukraine",
+    "status": "open",
+    "name": "Kharkiv Stake Dash",
+    "fee": "0.0022",
+    "length": 1200,
+    "prize": {
+      "first": "14256000000000000",
+      "second": "5940000000000000",
+      "third": "3564000000000000",
+      "total": "23760000000000000"
+    },
+    "start_time": "to be defined",
+    "gates": {},
+    "openGates": "",
+    "totalWinPercentage": "",
+    "winPercentageByDistance": "",
+    "totalOddsPercentage": "",
+    "oddsByDistance": "",
+    "horses": []
+  },
+  {
+    "id": "efnRPUP",
+    "city": "Kirklees",
+    "class": 4,
+    "country": "United Kingdom",
+    "status": "open",
+    "name": "The Goodman Kirklees Cup",
+    "fee": "0.0011",
+    "length": 1800,
+    "prize": {
+      "first": "7128000000000000",
+      "second": "2970000000000000",
+      "third": "1782000000000000",
+      "total": "11880000000000000"
+    },
+    "start_time": "to be defined",
+    "gates": {},
+    "openGates": "",
+    "totalWinPercentage": "",
+    "winPercentageByDistance": "",
+    "totalOddsPercentage": "",
+    "oddsByDistance": "",
+    "horses": []
+  },
+  {
+    "id": "GkbEVORK",
+    "city": "Pune",
+    "class": 5,
+    "country": "India",
+    "status": "open",
+    "name": "The Pune Street Circuit",
+    "fee": "0.0011",
+    "length": 2600,
+    "prize": {
+      "first": "7128000000000000",
+      "second": "2970000000000000",
+      "third": "1782000000000000",
+      "total": "11880000000000000"
+    },
+    "start_time": "to be defined",
+    "gates": {},
+    "openGates": "",
+    "totalWinPercentage": "",
+    "winPercentageByDistance": "",
+    "totalOddsPercentage": "",
+    "oddsByDistance": "",
+    "horses": []
+  },
+  {
+    "id": "Om8N5z4c",
+    "city": "Hamburg",
+    "class": 3,
+    "country": "Germany",
+    "status": "open",
+    "name": "Humburg Derby Day",
+    "fee": "0.0005",
+    "length": 2200,
+    "prize": {
+      "first": "3240000000000000",
+      "second": "1350000000000000",
+      "third": "810000000000000",
+      "total": "5400000000000000"
+    },
+    "start_time": "to be defined",
+    "gates": {
+      "1": { "horse_id": 58785, "status": "pending" },
+      "2": { "horse_id": 114980, "status": "pending" },
+      "5": { "horse_id": 52764, "status": "pending" },
+      "6": { "horse_id": 146464, "status": "pending" }
+    },
+    "openGates": "",
+    "totalWinPercentage": "",
+    "winPercentageByDistance": "",
+    "totalOddsPercentage": "",
+    "oddsByDistance": "",
+    "horses": [
+      {
+        "horse_id": 58785,
+        "stats": {
+          "# of Races ": {
+            "1": 6,
+            "2": 12,
+            "3": 16,
+            "4": 15,
+            "5": 8,
+            "6": 11,
+            "7": 8,
+            "8": 9,
+            "9": 10,
+            "10": 11,
+            "11": 9,
+            "12": 4
+          },
+          "Average Odds ": {
+            "1000": 13.81,
+            "1200": 14.99,
+            "1400": 14.62,
+            "1600": 19.71,
+            "1800": 17.42,
+            "2000": 15.98,
+            "2200": 14.38,
+            "2400": 15.47
+          },
+          "Win %": "5.04",
+          "Place %": "15.13",
+          "Show %": "28.57",
+          "Average Odds": "15.18",
+          "Heat Rate": "22.69%",
+          "# of Races": "119",
+          "Entry Fees": "0.3414",
+          "Winnings": "0.2305",
+          "Profit": "-0.1109",
+          "ROI": "-32.48%"
+        }
+      },
+      {
+        "horse_id": 114980,
+        "stats": {
+          "# of Races ": {
+            "1": 5,
+            "2": 5,
+            "3": 9,
+            "4": 5,
+            "5": 11,
+            "6": 3,
+            "7": 4,
+            "8": 12,
+            "9": 5,
+            "10": 11,
+            "11": 3,
+            "12": 4
+          },
+          "Win %": "6.49",
+          "Place %": "12.99",
+          "Show %": "24.68",
+          "Heat Rate": "24.68%",
+          "# of Races": "77",
+          "Entry Fees": "0.0555",
+          "Winnings": "0.0436",
+          "Profit": "-0.0119",
+          "ROI": "-21.44%"
+        }
+      },
+      {
+        "horse_id": 52764,
+        "stats": {
+          "# of Races ": {
+            "1": 32,
+            "2": 17,
+            "3": 17,
+            "4": 23,
+            "5": 12,
+            "6": 15,
+            "7": 15,
+            "8": 14,
+            "9": 22,
+            "10": 23,
+            "11": 24,
+            "12": 23
+          },
+          "Average Odds ": {
+            "1000": 11.16,
+            "1200": 10.52,
+            "1400": 11.11,
+            "1600": 10.89,
+            "1800": 11.43,
+            "2200": 12.2
+          },
+          "Win %": "13.5",
+          "Place %": "20.68",
+          "Show %": "27.85",
+          "Average Odds": "10.94",
+          "Heat Rate": "14.77%",
+          "# of Races": "237",
+          "Entry Fees": "0.187",
+          "Winnings": "0.1967",
+          "Profit": "0.0097",
+          "ROI": "5.19%"
+        }
+      },
+      {
+        "horse_id": 146464,
+        "stats": {
+          "# of Races ": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 2,
+            "5": 0,
+            "6": 1,
+            "7": 1,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0
+          },
+          "Win %": "0.0",
+          "Place %": "0.0",
+          "Show %": "0.0",
+          "Heat Rate": "75.0%",
+          "# of Races": "4",
+          "Entry Fees": "0.0015",
+          "Winnings": "0",
+          "Profit": "-0.0015",
+          "ROI": "-100.0%"
+        }
+      }
+    ]
+  },
+  {
+    "id": "Wj2iALoO",
+    "city": "Wuhan",
+    "class": 1,
+    "country": "China",
+    "status": "open",
+    "name": "Grand Wuhan Cup",
+    "fee": "0.0022",
+    "length": 2000,
+    "prize": {
+      "first": "14256000000000000",
+      "second": "5940000000000000",
+      "third": "3564000000000000",
+      "total": "23760000000000000"
+    },
+    "start_time": "to be defined",
+    "gates": {
+      "11": { "horse_id": 8618, "status": "pending" },
+      "12": { "horse_id": 122930, "status": "pending" }
+    },
+    "openGates": "",
+    "totalWinPercentage": "",
+    "winPercentageByDistance": "",
+    "totalOddsPercentage": "",
+    "oddsByDistance": "",
+    "horses": [
+      {
+        "horse_id": 8618,
+        "stats": {
+          "# of Races ": {
+            "1": 98,
+            "2": 74,
+            "3": 38,
+            "4": 37,
+            "5": 39,
+            "6": 47,
+            "7": 39,
+            "8": 36,
+            "9": 58,
+            "10": 55,
+            "11": 62,
+            "12": 91
+          },
+          "Average Odds ": {
+            "1000": 9.32,
+            "1200": 9.05,
+            "1400": 8.77,
+            "1600": 8.25,
+            "1800": 8.21,
+            "2000": 8.54,
+            "2200": 8.7,
+            "2400": 8.65,
+            "2600": 9.1
+          },
+          "Win %": "14.54",
+          "Place %": "25.52",
+          "Show %": "31.16",
+          "Average Odds": "8.52",
+          "Heat Rate": "62.76%",
+          "# of Races": "674",
+          "Entry Fees": "1.7463",
+          "Winnings": "1.7855",
+          "Profit": "0.0392",
+          "ROI": "2.24%"
+        }
+      },
+      {
+        "horse_id": 122930,
+        "stats": {
+          "# of Races ": {
+            "1": 89,
+            "2": 26,
+            "3": 25,
+            "4": 20,
+            "5": 9,
+            "6": 12,
+            "7": 16,
+            "8": 13,
+            "9": 17,
+            "10": 23,
+            "11": 30,
+            "12": 83
+          },
+          "Win %": "24.52",
+          "Place %": "31.68",
+          "Show %": "38.57",
+          "Heat Rate": "52.34%",
+          "# of Races": "363",
+          "Entry Fees": "0.5887",
+          "Winnings": "1.0009",
+          "Profit": "0.4122",
+          "ROI": "70.02%"
+        }
+      }
+    ]
+  },
+  {
+    "id": "JtF6b2T",
+    "city": "Jacksonville",
+    "class": 4,
+    "country": "United States",
+    "status": "open",
+    "name": "Jacksonville Stakes",
+    "fee": "0.0011",
+    "length": 1800,
+    "prize": {
+      "first": "7128000000000000",
+      "second": "2970000000000000",
+      "third": "1782000000000000",
+      "total": "11880000000000000"
+    },
+    "start_time": "to be defined",
+    "gates": { "8": { "horse_id": 24280, "status": "pending" } },
+    "openGates": "",
+    "totalWinPercentage": "",
+    "winPercentageByDistance": "",
+    "totalOddsPercentage": "",
+    "oddsByDistance": "",
+    "horses": [
+      {
+        "horse_id": 24280,
+        "stats": {
+          "# of Races ": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 1,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 1
+          },
+          "Win %": "0.0",
+          "Place %": "0.0",
+          "Show %": "25.0",
+          "Heat Rate": "75.0%",
+          "# of Races": "4",
+          "Entry Fees": "0.0021",
+          "Winnings": "0.0013",
+          "Profit": "-0.0008",
+          "ROI": "-38.1%"
+        }
+      }
+    ]
+  },
+  {
+    "id": "iMVE8cyk",
+    "city": "Newham",
+    "class": 5,
+    "country": "United Kingdom",
+    "status": "open",
+    "name": "Newham Classic Mile",
+    "fee": "0.0005",
+    "length": 1600,
+    "prize": {
+      "first": "3240000000000000",
+      "second": "1350000000000000",
+      "third": "810000000000000",
+      "total": "5400000000000000"
+    },
+    "start_time": "to be defined",
+    "gates": {
+      "6": { "horse_id": 102363, "status": "pending" },
+      "7": { "horse_id": 117073, "status": "pending" }
+    },
+    "openGates": "",
+    "totalWinPercentage": "",
+    "winPercentageByDistance": "",
+    "totalOddsPercentage": "",
+    "oddsByDistance": "",
+    "horses": [
+      {
+        "horse_id": 102363,
+        "stats": {
+          "# of Races ": {
+            "1": 6,
+            "2": 9,
+            "3": 7,
+            "4": 14,
+            "5": 13,
+            "6": 8,
+            "7": 15,
+            "8": 14,
+            "9": 11,
+            "10": 6,
+            "11": 11,
+            "12": 7
+          },
+          "Win %": "4.96",
+          "Place %": "12.4",
+          "Show %": "18.18",
+          "Heat Rate": "6.61%",
+          "# of Races": "121",
+          "Entry Fees": "0.0824",
+          "Winnings": "0.0274",
+          "Profit": "-0.055",
+          "ROI": "-66.75%"
+        }
+      },
+      {
+        "horse_id": 117073,
+        "stats": {
+          "# of Races ": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 1,
+            "10": 2,
+            "11": 0,
+            "12": 0
+          },
+          "Win %": "0.0",
+          "Place %": "0.0",
+          "Show %": "0.0",
+          "Heat Rate": "0.0%",
+          "# of Races": "4",
+          "Entry Fees": "0.0023",
+          "Winnings": "0",
+          "Profit": "-0.0023",
+          "ROI": "-100.0%"
+        }
+      }
+    ]
+  },
+  {
+    "id": "SBWuhW6N",
+    "city": "Chicago",
+    "class": 4,
+    "country": "United States",
+    "status": "open",
+    "name": "Chicago Crusaders",
+    "fee": "0.0005",
+    "length": 1400,
+    "prize": {
+      "first": "3240000000000000",
+      "second": "1350000000000000",
+      "third": "810000000000000",
+      "total": "5400000000000000"
+    },
+    "start_time": "to be defined",
+    "gates": {
+      "2": { "horse_id": 48341, "status": "pending" },
+      "3": { "horse_id": 97047, "status": "pending" },
+      "4": { "horse_id": 145075, "status": "pending" },
+      "5": { "horse_id": 80209, "status": "pending" },
+      "6": { "horse_id": 96554, "status": "pending" },
+      "7": { "horse_id": 106743, "status": "pending" },
+      "8": { "horse_id": 85180, "status": "pending" },
+      "9": { "horse_id": 23644, "status": "pending" },
+      "10": { "horse_id": 140400, "status": "pending" },
+      "11": { "horse_id": 48842, "status": "pending" },
+      "12": { "horse_id": 56946, "status": "pending" }
+    },
+    "openGates": "",
+    "totalWinPercentage": "",
+    "winPercentageByDistance": "",
+    "totalOddsPercentage": "",
+    "oddsByDistance": "",
+    "horses": [
+      {
+        "horse_id": 48341,
+        "stats": {
+          "# of Races ": {
+            "1": 23,
+            "2": 21,
+            "3": 10,
+            "4": 15,
+            "5": 16,
+            "6": 8,
+            "7": 13,
+            "8": 13,
+            "9": 11,
+            "10": 20,
+            "11": 21,
+            "12": 18
+          },
+          "Average Odds ": {
+            "1200": 14.54,
+            "1400": 17.07,
+            "1800": 12.35,
+            "2000": 12.38,
+            "2200": 12.7,
+            "2400": 13.22,
+            "2600": 22.01
+          },
+          "Win %": "12.17",
+          "Place %": "23.28",
+          "Show %": "28.57",
+          "Average Odds": "13.35",
+          "Heat Rate": "48.68%",
+          "# of Races": "189",
+          "Entry Fees": "0.1457",
+          "Winnings": "0.1892",
+          "Profit": "0.0435",
+          "ROI": "29.86%"
+        }
+      },
+      {
+        "horse_id": 97047,
+        "stats": {
+          "# of Races ": {
+            "1": 1,
+            "2": 2,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1,
+            "8": 0,
+            "9": 1,
+            "10": 0,
+            "11": 0,
+            "12": 0
+          },
+          "Win %": "14.29",
+          "Place %": "42.86",
+          "Show %": "42.86",
+          "Heat Rate": "14.29%",
+          "# of Races": "7",
+          "Entry Fees": "0.0036",
+          "Winnings": "0.0098",
+          "Profit": "0.0062",
+          "ROI": "172.22%"
+        }
+      },
+      {
+        "horse_id": 145075,
+        "stats": {
+          "# of Races ": {
+            "1": 1,
+            "2": 5,
+            "3": 1,
+            "4": 1,
+            "5": 2,
+            "6": 0,
+            "7": 4,
+            "8": 6,
+            "9": 0,
+            "10": 2,
+            "11": 0,
+            "12": 0
+          },
+          "Win %": "4.55",
+          "Place %": "27.27",
+          "Show %": "31.82",
+          "Heat Rate": "4.55%",
+          "# of Races": "22",
+          "Entry Fees": "0.0111",
+          "Winnings": "0.0132",
+          "Profit": "0.0021",
+          "ROI": "18.92%"
+        }
+      },
+      {
+        "horse_id": 80209,
+        "stats": {
+          "# of Races ": {
+            "1": 10,
+            "2": 15,
+            "3": 8,
+            "4": 11,
+            "5": 16,
+            "6": 15,
+            "7": 16,
+            "8": 14,
+            "9": 12,
+            "10": 18,
+            "11": 16,
+            "12": 8
+          },
+          "Win %": "6.29",
+          "Place %": "15.72",
+          "Show %": "20.75",
+          "Heat Rate": "11.32%",
+          "# of Races": "159",
+          "Entry Fees": "0.0837",
+          "Winnings": "0.0607",
+          "Profit": "-0.023",
+          "ROI": "-27.48%"
+        }
+      },
+      {
+        "horse_id": 96554,
+        "stats": {
+          "# of Races ": {
+            "1": 5,
+            "2": 7,
+            "3": 8,
+            "4": 5,
+            "5": 6,
+            "6": 7,
+            "7": 5,
+            "8": 7,
+            "9": 6,
+            "10": 4,
+            "11": 2,
+            "12": 3
+          },
+          "Win %": "7.69",
+          "Place %": "18.46",
+          "Show %": "30.77",
+          "Heat Rate": "30.77%",
+          "# of Races": "65",
+          "Entry Fees": "0.0261",
+          "Winnings": "0.0276",
+          "Profit": "0.0015",
+          "ROI": "5.75%"
+        }
+      },
+      {
+        "horse_id": 106743,
+        "stats": {
+          "# of Races ": {
+            "1": 2,
+            "2": 1,
+            "3": 3,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 2,
+            "8": 2,
+            "9": 1,
+            "10": 2,
+            "11": 3,
+            "12": 0
+          },
+          "Win %": "11.11",
+          "Place %": "16.67",
+          "Show %": "33.33",
+          "Heat Rate": "16.67%",
+          "# of Races": "18",
+          "Entry Fees": "0.0109",
+          "Winnings": "0.0134",
+          "Profit": "0.0025",
+          "ROI": "22.94%"
+        }
+      },
+      {
+        "horse_id": 85180,
+        "stats": {
+          "# of Races ": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 2,
+            "6": 1,
+            "7": 1,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0
+          },
+          "Win %": "0.0",
+          "Place %": "0.0",
+          "Show %": "20.0",
+          "Heat Rate": "0.0%",
+          "# of Races": "5",
+          "Entry Fees": "0.0028",
+          "Winnings": "0.0013",
+          "Profit": "-0.0015",
+          "ROI": "-53.57%"
+        }
+      },
+      {
+        "horse_id": 23644,
+        "stats": {
+          "# of Races ": {
+            "1": 9,
+            "2": 11,
+            "3": 10,
+            "4": 10,
+            "5": 15,
+            "6": 16,
+            "7": 12,
+            "8": 14,
+            "9": 13,
+            "10": 13,
+            "11": 8,
+            "12": 11
+          },
+          "Average Odds ": {
+            "1000": 12.93,
+            "1400": 11.07,
+            "1600": 16.37,
+            "2000": 12.49
+          },
+          "Win %": "6.34",
+          "Place %": "14.08",
+          "Show %": "21.13",
+          "Average Odds": "12.81",
+          "Heat Rate": "26.06%",
+          "# of Races": "142",
+          "Entry Fees": "0.048",
+          "Winnings": "0.0448",
+          "Profit": "-0.0032",
+          "ROI": "-6.67%"
+        }
+      },
+      {
+        "horse_id": 140400,
+        "stats": {
+          "# of Races ": {
+            "1": 18,
+            "2": 12,
+            "3": 17,
+            "4": 4,
+            "5": 7,
+            "6": 6,
+            "7": 8,
+            "8": 7,
+            "9": 5,
+            "10": 14,
+            "11": 17,
+            "12": 16
+          },
+          "Win %": "13.74",
+          "Place %": "22.9",
+          "Show %": "35.88",
+          "Heat Rate": "12.98%",
+          "# of Races": "131",
+          "Entry Fees": "0.0739",
+          "Winnings": "0.0994",
+          "Profit": "0.0255",
+          "ROI": "34.51%"
+        }
+      },
+      {
+        "horse_id": 48842,
+        "stats": {
+          "# of Races ": {
+            "1": 7,
+            "2": 8,
+            "3": 3,
+            "4": 3,
+            "5": 4,
+            "6": 1,
+            "7": 3,
+            "8": 5,
+            "9": 6,
+            "10": 3,
+            "11": 3,
+            "12": 4
+          },
+          "Average Odds ": { "1000": 7.68 },
+          "Win %": "14.0",
+          "Place %": "30.0",
+          "Show %": "36.0",
+          "Average Odds": "7.68",
+          "Heat Rate": "40.0%",
+          "# of Races": "50",
+          "Entry Fees": "0.0358",
+          "Winnings": "0.0711",
+          "Profit": "0.0353",
+          "ROI": "98.6%"
+        }
+      },
+      {
+        "horse_id": 56946,
+        "stats": {
+          "# of Races ": {
+            "1": 4,
+            "2": 8,
+            "3": 7,
+            "4": 15,
+            "5": 13,
+            "6": 14,
+            "7": 8,
+            "8": 24,
+            "9": 13,
+            "10": 11,
+            "11": 3,
+            "12": 1
+          },
+          "Average Odds ": { "1800": 25.52, "2000": 18.77, "2400": 23.61 },
+          "Win %": "3.31",
+          "Place %": "9.92",
+          "Show %": "15.7",
+          "Average Odds": "22.88",
+          "Heat Rate": "0.83%",
+          "# of Races": "121",
+          "Entry Fees": "0.0357",
+          "Winnings": "0.017",
+          "Profit": "-0.0187",
+          "ROI": "-52.38%"
+        }
+      }
+    ]
+  },
+  {
+    "id": "nRPRV67X",
+    "city": "Bangalore",
+    "class": 5,
+    "country": "India",
+    "status": "open",
+    "name": "The Vedavati Plate",
+    "fee": "0.0005",
+    "length": 1000,
+    "prize": {
+      "first": "3240000000000000",
+      "second": "1350000000000000",
+      "third": "810000000000000",
+      "total": "5400000000000000"
+    },
+    "start_time": "to be defined",
+    "gates": {
+      "3": { "horse_id": 47596, "status": "pending" },
+      "5": { "horse_id": 67724, "status": "pending" },
+      "7": { "horse_id": 140445, "status": "pending" },
+      "8": { "horse_id": 30261, "status": "pending" }
+    },
+    "openGates": "",
+    "totalWinPercentage": "",
+    "winPercentageByDistance": "",
+    "totalOddsPercentage": "",
+    "oddsByDistance": "",
+    "horses": [
+      { "horse_id": 47596, "stats": {} },
+      {
+        "horse_id": 67724,
+        "stats": {
+          "# of Races ": {
+            "1": 2,
+            "2": 7,
+            "3": 6,
+            "4": 1,
+            "5": 8,
+            "6": 8,
+            "7": 13,
+            "8": 6,
+            "9": 7,
+            "10": 12,
+            "11": 9,
+            "12": 3
+          },
+          "Average Odds ": { "1200": 17.71, "2200": 24.17 },
+          "Win %": "2.44",
+          "Place %": "10.98",
+          "Show %": "18.29",
+          "Average Odds": "20.94",
+          "Heat Rate": "3.66%",
+          "# of Races": "82",
+          "Entry Fees": "0.024",
+          "Winnings": "0.0023",
+          "Profit": "-0.0217",
+          "ROI": "-90.42%"
+        }
+      },
+      {
+        "horse_id": 140445,
+        "stats": {
+          "# of Races ": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 0,
+            "8": 0,
+            "9": 1,
+            "10": 1,
+            "11": 1,
+            "12": 1
+          },
+          "Win %": "0.0",
+          "Place %": "0.0",
+          "Show %": "0.0",
+          "Heat Rate": "0.0%",
+          "# of Races": "6",
+          "Entry Fees": "0.0027",
+          "Winnings": "0",
+          "Profit": "-0.0027",
+          "ROI": "-100.0%"
+        }
+      },
+      {
+        "horse_id": 30261,
+        "stats": {
+          "# of Races ": {
+            "1": 51,
+            "2": 56,
+            "3": 49,
+            "4": 27,
+            "5": 31,
+            "6": 26,
+            "7": 29,
+            "8": 26,
+            "9": 52,
+            "10": 57,
+            "11": 45,
+            "12": 53
+          },
+          "Average Odds ": {
+            "1000": 15.76,
+            "1200": 17.73,
+            "1400": 19.65,
+            "1600": 28.04,
+            "1800": 15.18,
+            "2000": 14.22,
+            "2200": 12.59,
+            "2400": 12.21,
+            "2600": 9.04
+          },
+          "Win %": "10.16",
+          "Place %": "21.31",
+          "Show %": "31.08",
+          "Average Odds": "14.51",
+          "Heat Rate": "42.63%",
+          "# of Races": "502",
+          "Entry Fees": "0.466",
+          "Winnings": "0.4798",
+          "Profit": "0.0138",
+          "ROI": "2.96%"
+        }
+      }
+    ]
+  }
+]
