@@ -7,7 +7,7 @@ const cheerio = require("cheerio");
 const pretty = require("pretty");
 const {MongoClient} = require('mongodb');
 
-const uri = "mongodb://MongoAdmin:fd5198ba5f4d92ea27d172ed6c9134f27939840a6907c03aac@104.156.231.66:27107/KKDB?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false";
+const uri = "mongodb+srv://dbUser:dbpassword@cluster0.zvv3e.mongodb.net/zedrun?authSource=admin&replicaSet=atlas-b51tyu-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true";
 
 
 const client = new MongoClient(uri);
@@ -27,12 +27,22 @@ async function listDatabases(client){
 
 let sortedarray=[];
 
+const sleepz = (ms = 0) => {
+    return new Promise(r => setTimeout(r, ms));
+};
+const racescolletion = [
 
+];
 
 const getActiveRaces = async(offset=0) =>{
- 
+    await sleepz(1000);
+    const _result = await client.db("zedrun").dropDatabase();
+    console.log(_result);
     // const proxy1 = 'http://test-country-UnitedStates_1:test@46.4.55.185:8603'
-
+    try{
+    let offset2=0;
+    while(true){
+    // await sleepz(200);
     const browser = await puppeteer.launch({
         headless: false,
         args: ['--proxy-server=46.4.55.185:8603',"--disable-setuid-sandbox","--no-sandbox",
@@ -44,12 +54,21 @@ const getActiveRaces = async(offset=0) =>{
         username: 'test-country-UnitedStates_1',
         password: 'test'
     })
-    await page.goto('https://racing-api.zed.run/api/v1/races?offset=0&status=open')
-    const extractedText = await page.$eval('*', (el) => el.innerText);
-    sortRaces(JSON.parse(extractedText),browser);
-
-    //await page.screenshot({ path: 'nytimes.png', fullPage: true })
-    page.close();
+    
+   
+       
+        await page.goto(`https://racing-api.zed.run/api/v1/races?offset=${offset2}&status=open`)
+        const extractedText = await page.$eval('*', (el) => el.innerText);
+        sortRaces(JSON.parse(extractedText),browser);
+        console.log(extractedText);
+        offset2+=10;
+        //await page.screenshot({ path: 'nytimes.png', fullPage: true })
+        // page.close();
+    }
+    }catch(e){
+        console.log(`end of the races`);
+    }
+    
     // await browser.close()
 
 }
@@ -59,6 +78,9 @@ const sortRaces = async(races,browser) =>{
     
     let count = 0;
     races.forEach(async element => {
+        // if(racescolletion.includes(element.raec.id)){
+        //     continue;
+        // }
         let race = {};
         race["id"] = element.race_id;
         race["city"] = element.city;
@@ -93,21 +115,24 @@ const sortRaces = async(races,browser) =>{
         // console.log(race); 
         count++;
         console.log(count);
-        sortedarray.push(race);
+        const result = await client.db("zedrun").collection(element.race_id).insertOne({...race})
+        console.log(result);  
+        // sortedarray.push(race);
+
         if(count == races.length){
             console.log("sortedarray"); 
-            const result = await client.db("zedrun").collection("races").insertOne({"id":"1","races": sortedarray})
+            // const result = await client.db("zedrun").collection("races").insertOne({"id":"1","races": sortedarray})
             // const result = await client.db("KKDB").collection("Collections").findOne({})
             console.log(result);  
-                fs.writeFile(`./config/races.json`, JSON.stringify(sortedarray), (err) => {
-                    if (err) {
-                        // throw err;
-                        return false;
-                    }
-                    console.log("JSON data is saved.");
+                // fs.writeFile(`./config/races.json`, JSON.stringify(sortedarray), (err) => {
+                //     if (err) {
+                //         // throw err;
+                //         return false;
+                //     }
+                //     console.log("JSON data is saved.");
 
-                });
-               // browser.close(); 
+                // });
+               browser.close(); 
         }  
          
     });
@@ -179,7 +204,14 @@ const getHorseData = async(horseid,browser) =>{
 
 }
 
-getActiveRaces();
+setInterval(()=>{
+
+
+    getActiveRaces();
+
+
+},[5 * 60 * 1000])
+
 
 
 
