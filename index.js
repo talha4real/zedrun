@@ -1,14 +1,15 @@
 const axios = require("axios");
 const fs = require('fs')
-const puppeteer = require("puppeteer");
+const puppeteer = require('puppeteer-extra')
 const mongoose = require("mongoose");
 const useProxy = require('puppeteer-page-proxy');
 const cheerio = require("cheerio");
 const pretty = require("pretty");
 const {MongoClient} = require('mongodb');
 
-const uri = "mongodb+srv://dbUser:dbpassword@cluster0.zvv3e.mongodb.net/zedrun?authSource=admin&replicaSet=atlas-b51tyu-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true";
-
+const uri = "mongodb://MongoAdmin:fd5198ba5f4d92ea27d172ed6c9134f27939840a6907c03aac@159.223.110.25:27107/ProtoDB?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false";
+const StealthPlugin = require('puppeteer-extra-plugin-stealth')
+puppeteer.use(StealthPlugin())
 
 const client = new MongoClient(uri);
 
@@ -44,7 +45,7 @@ const getActiveRaces = async(offset=0) =>{
     while(true){
     // await sleepz(200);
     const browser = await puppeteer.launch({
-        headless: false,
+        headless: true,
         args: ['--proxy-server=46.4.55.185:8603',"--disable-setuid-sandbox","--no-sandbox",
         ],
         'ignoreHTTPSErrors': true
@@ -115,7 +116,8 @@ const sortRaces = async(races,browser) =>{
         // console.log(race); 
         count++;
         console.log(count);
-        const result = await client.db("zedrun").collection(element.race_id).insertOne({...race})
+        await sleepz(1000);
+        const result = await client.db("zedrun").collection("zed.run").insertOne({...race})
         console.log(result);  
         // sortedarray.push(race);
 
@@ -204,13 +206,12 @@ const getHorseData = async(horseid,browser) =>{
 
 }
 
-setInterval(()=>{
 
+setInterval(()=>{
 
     getActiveRaces();
 
-
-},[5 * 60 * 1000])
+},[2 * 60 * 1000])
 
 
 
