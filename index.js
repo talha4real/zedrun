@@ -6,7 +6,7 @@ const cheerio = require("cheerio");
 const pretty = require("pretty");
 const {MongoClient} = require('mongodb');
 
-const uri = "mongodb://MongoAdmin:fd5198ba5f4d92ea27d172ed6c9134f27939840a6907c03aac@159.223.110.25:27107/ProtoDB?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false";
+const uri = "mongodb://MongoAdmin:fd5198ba5f4d92ea27d172ed6c9134f27939840a6907c03aac@95.179.170.47:27107/InazumaDB?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false";
 const StealthPlugin = require('puppeteer-extra-plugin-stealth')
 puppeteer.use(StealthPlugin())
 
