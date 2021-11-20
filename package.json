@@ -17,6 +17,8 @@
     "mongoose": "^6.0.12",
     "pretty": "^2.0.0",
     "puppeteer": "^11.0.0",
+    "puppeteer-extra": "^3.2.3",
+    "puppeteer-extra-plugin-stealth": "^2.9.0",
     "puppeteer-page-proxy": "^1.2.8"
   }
 }

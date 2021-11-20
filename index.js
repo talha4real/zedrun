@@ -2,7 +2,6 @@ const axios = require("axios");
 const fs = require('fs')
 const puppeteer = require('puppeteer-extra')
 const mongoose = require("mongoose");
-const useProxy = require('puppeteer-page-proxy');
 const cheerio = require("cheerio");
 const pretty = require("pretty");
 const {MongoClient} = require('mongodb');
@@ -42,18 +41,22 @@ const getActiveRaces = async(offset=0) =>{
     // const proxy1 = 'http://test-country-UnitedStates_1:test@46.4.55.185:8603'
     try{
     let offset2=0;
+    let proxylist = getProxyList();
     while(true){
     // await sleepz(200);
-    const browser = await puppeteer.launch({
+        let proxyx = proxylist[Math.floor(Math.random() * (9 - 0 + 1) + 0)];
+        console.log(proxyx);
+        proxyx= proxyx.split(':'); 
+        const browser = await puppeteer.launch({
         headless: true,
-        args: ['--proxy-server=46.4.55.185:8603',"--disable-setuid-sandbox","--no-sandbox",
+        args: [`--proxy-server=${proxyx[0]}:${parseInt(proxyx[1])}`,"--disable-setuid-sandbox","--no-sandbox",
         ],
         'ignoreHTTPSErrors': true
-    });
+        });
     const page = await browser.newPage();
     await page.authenticate({        
-        username: 'test-country-UnitedStates_1',
-        password: 'test'
+        username: proxyx[2],
+        password: proxyx[3]
     })
     
    
@@ -67,6 +70,7 @@ const getActiveRaces = async(offset=0) =>{
         // page.close();
     }
     }catch(e){
+        console.log(e);
         console.log(`end of the races`);
     }
     
@@ -208,7 +212,7 @@ const getHorseData = async(horseid,browser) =>{
 
 
 setInterval(()=>{
-
+    
     getActiveRaces();
 
 },[2 * 60 * 1000])
@@ -288,13 +292,14 @@ setInterval(()=>{
 // }
 
 // // getMax();
-// const getProxyList= ()=>{
-//     var proxies = "";
+const getProxyList= ()=>{
+    var proxies = "";
 
-//     proxies = fs.readFileSync("proxies.txt", "utf8");
-// 	var proxyList = proxies.split(/\r\n|\r|\n/);
-// 	if (proxyList[proxyList.length - 1] === "") {
-// 		proxyList.pop();
-// 	}
-// 	return proxyList; 
-// }
+    proxies = fs.readFileSync("proxies.txt", "utf8");
+	var proxyList = proxies.split(/\r\n|\r|\n/);
+	if (proxyList[proxyList.length - 1] === "") {
+		proxyList.pop();
+	}
+    console.log(proxyList);
+	return proxyList; 
+}
