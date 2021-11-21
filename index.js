@@ -39,6 +39,7 @@ const getActiveRaces = async(offset=0) =>{
     const _result = await client.db("zedrun").dropDatabase();
     console.log(_result);
     // const proxy1 = 'http://test-country-UnitedStates_1:test@46.4.55.185:8603'
+    let browser;
     try{
     let offset2=0;
     let proxylist = getProxyList();
@@ -47,7 +48,7 @@ const getActiveRaces = async(offset=0) =>{
         let proxyx = proxylist[Math.floor(Math.random() * (9 - 0 + 1) + 0)];
         console.log(proxyx);
         proxyx= proxyx.split(':'); 
-        const browser = await puppeteer.launch({
+        browser = await puppeteer.launch({
         headless: true,
         args: [`--proxy-server=${proxyx[0]}:${parseInt(proxyx[1])}`,"--disable-setuid-sandbox","--no-sandbox",
         ],
@@ -71,6 +72,7 @@ const getActiveRaces = async(offset=0) =>{
     }
     }catch(e){
         console.log(e);
+        browser.close();
         console.log(`end of the races`);
     }
     
@@ -215,7 +217,7 @@ setInterval(()=>{
     
     getActiveRaces();
 
-},[2 * 60 * 1000])
+},[6 * 60 * 1000])
 
 
 
