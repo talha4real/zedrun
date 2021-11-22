@@ -45,36 +45,46 @@ const getActiveRaces = async(offset=0) =>{
     let proxylist = getProxyList();
     while(true){
     // await sleepz(200);
+    try{
         let proxyx = proxylist[Math.floor(Math.random() * (9 - 0 + 1) + 0)];
         console.log(proxyx);
         proxyx= proxyx.split(':'); 
         browser = await puppeteer.launch({
-        headless: true,
+        headless: false,
         args: [`--proxy-server=${proxyx[0]}:${parseInt(proxyx[1])}`,"--disable-setuid-sandbox","--no-sandbox",
         ],
         'ignoreHTTPSErrors': true
         });
-    const page = await browser.newPage();
-    await page.authenticate({        
-        username: proxyx[2],
-        password: proxyx[3]
-    })
+        const page = await browser.newPage();
+        await page.authenticate({        
+            username: proxyx[2],
+            password: proxyx[3]
+        })
     
    
        
         await page.goto(`https://racing-api.zed.run/api/v1/races?offset=${offset2}&status=open`)
         const extractedText = await page.$eval('*', (el) => el.innerText);
-        sortRaces(JSON.parse(extractedText),browser);
+        await sortRaces(JSON.parse(extractedText),browser);
         console.log(extractedText);
         offset2+=10;
+        
         //await page.screenshot({ path: 'nytimes.png', fullPage: true })
         // page.close();
+    }catch(e){
+        console.log(e)
+    } finally {
+        await sleepz(2* 60 * 1000)
+        await browser.close();
+    }
     }
     }catch(e){
         console.log(e);
         browser.close();
         console.log(`end of the races`);
-    }
+    }finally {
+        await browser.close();
+      }
     
     // await browser.close()
 
@@ -85,6 +95,7 @@ const sortRaces = async(races,browser) =>{
     
     let count = 0;
     races.forEach(async element => {
+        try{
         // if(racescolletion.includes(element.raec.id)){
         //     continue;
         // }
@@ -143,6 +154,11 @@ const sortRaces = async(races,browser) =>{
                browser.close(); 
         }  
          
+        
+    }catch(e){
+        console.log(e);
+        browser.close();
+    }
     });
     // console.log(sortedarray);
 
@@ -212,12 +228,12 @@ const getHorseData = async(horseid,browser) =>{
 
 }
 
-
+getActiveRaces();
 setInterval(()=>{
     
     getActiveRaces();
 
-},[6 * 60 * 1000])
+},[100 * 60 * 1000])
 
 
 
